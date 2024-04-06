@@ -1,7 +1,8 @@
 <mgl-map
-  [style]="'https://api.maptiler.com/maps/streets/style.json?key=YOUR_MAPTILER_API_KEY_HERE'"
+  [style]="'https://api.maptiler.com/maps/streets/style.json?key=5gmRDnvtX0sBQ2uvtlfX'"
   [zoom]="[14]"
   [center]="[16.62662018, 49.2125578]"
 >
-<mgl-control mglNavigation position="top-left"></mgl-control>
+  <mgl-control mglNavigation position="top-left"></mgl-control>
+  <mgl-marker *ngFor="let marker of markers" [lngLat]="[marker.lng, marker.lat]" [className]="'dot-marker'"></mgl-marker>
 </mgl-map>

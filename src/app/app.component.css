@@ -3,3 +3,10 @@ mgl-map {
   height: 100vh;
   width: 100%;
 }
+
+.dot-marker {
+  background-color: #ff0000; /* Change to desired color */
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
