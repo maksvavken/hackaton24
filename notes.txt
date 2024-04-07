@@ -1,0 +1,30 @@
+querry for highway:
+[out:json];
+(
+  rel(1645049); // A2 - Cesta
+  >;
+);
+out center;
+>;
+(
+  rel(59655); // A1 - Cesta
+  >;
+);
+out center;
+>;
+out geom;
+(._;>;);
+out;
+
+make it right/east of 14.580965830313227
+
+railway querry:
+[out:json];
+(
+  area["ISO3166-1"="SI"][admin_level=2]; // Select the area of Slovenia
+  way["railway"="rail"](area)["operator"];
+  rel["railway"="rail"](area)["operator"];
+);
+out body;
+>;
+out skel qt;
